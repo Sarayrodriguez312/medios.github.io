@@ -1,0 +1,59 @@
+.a, .b, .c {
+	width: 25%;
+	height: 100px;
+	float: left; /*Propiedad que le dice a los contenidos que se coloquen a la izquierda*/
+	margin-right: 10px;
+	margin-bottom: 10px;
+	color: white;
+	font-weight: bold;
+}
+
+.a {
+	background-color: #FF0000;
+	margin-left: 10%;
+	box-shadow: 4px 4px 15px #B5B5B5; /*Sombra de caja*/
+}
+
+/*div:nth-child(3)
+	{
+		background-color: #ABFFEE;
+	}*/
+
+/*
+div:nth-last-child(2)
+	{
+		background-color: #ABFFEE;
+	}
+*/
+
+/*.a:nth-last-of-type(odd)
+	{
+		background-color: #ABFFEE;
+	}*/
+
+p::selection {background-color: #FF7E7E;color:white;}
+
+.b {
+	background-color: #FF7E7E;
+}
+
+.c{
+	background-color: #FFB9B9;
+}
+
+@media (min-width: 915px) 
+{
+
+}
+
+
+@media (max-width: 618px) /*En estas medidas que se comporte con las indicaciones siguientes*/
+{
+	.a, .b, .c {
+		width: 80%;
+		height: 50px;
+		display: block;
+		float: none; /*para anular el float*/
+		margin-left: 10%;
+	}
+}
